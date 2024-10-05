@@ -1,0 +1,18 @@
+.Btn {
+  background-color: var(--primary-color);
+  font-size: 14px;
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+  font-weight: 600;
+}
+
+.Btn:hover {
+  background-color: var(--primary-color);
+}
+
+.Btn:disabled {
+  opacity: 0.5;
+}

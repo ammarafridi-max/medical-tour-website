@@ -1,0 +1,17 @@
+.Btn {
+  background-color: var(--danger-color);
+  font-size: 15px;
+  padding: 8px 30px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover {
+  background-color: var(--danger-color-hover);
+}
+
+.Btn:disabled {
+  opacity: 0.5;
+}
