@@ -1,0 +1,112 @@
+.footer {
+    background-color: #00203a;
+    padding: 60px 0;
+    color: white;
+  }
+
+.footer a {
+  text-decoration: none;
+  color: white
+}
+
+  .footer h4 {
+    font-size: 18px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 14.5px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 40px; /* Adds spacing between the divs */
+  }
+  
+  /* Company Info */
+  .companyInfo {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+  
+  /* Quick Links */
+  .linksDiv {
+    flex-basis: 15%;
+    flex-grow: 1;
+  }
+  
+  .linksDiv ul {
+    padding: 0;
+  }
+  
+  .linksDiv li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 14.5px;
+  }
+  
+  /* Services */
+  .servicesDiv {
+    flex-basis: 20%;
+    flex-grow: 1;
+  }
+  
+  .servicesDiv ul {
+    padding: 0;
+  }
+  
+  .servicesDiv li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 14.5px;
+  }
+  
+  /* Contact Info */
+  .contactInfo {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+  
+  .contactInfo p {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Bottom */
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+  }
+  
+  .footerBottom p {
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .companyInfo, .linksDiv, .servicesDiv, .contactInfo {
+      flex-basis: 100%;
+    }
+  
+    .footerBottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

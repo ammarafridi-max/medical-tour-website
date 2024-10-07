@@ -2,41 +2,73 @@ import styles from "./Contact.module.css";
 import Container from "../../_components/Container/Container";
 import { PrimarySection } from "../../_components/Sections/Sections";
 import SectionTitle from "../../_components/Typography/SectionTitle";
-import { MdEmail, MdPhone } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { RiWhatsappFill } from "react-icons/ri";
+import InputGroup from "../../_components/FormElements/InputGroup";
 
 export default function Contact() {
   return (
-    <PrimarySection>
+    <PrimarySection py="75px">
       <Container>
-        <SectionTitle fontSize="xlarge" mb="35px">
+        {/* <SectionTitle fontSize="xlarge" mb="35px">
           <span>Contact Us</span>
-        </SectionTitle>
-        <div className="row mx-0 px-0">
-          <div className="col-12 col-lg-4 px-0">
+        </SectionTitle> */}
+        <div className={styles.row}>
+          <div>
+            <ContactForm />
+          </div>
+          <div>
             <ContactButton
               icon={<MdEmail />}
               title="Email Us"
               href="mailto:info@citytours.ae"
-            >
-              info@citytours.ae
-            </ContactButton>
+              text="info@citytours.ae"
+            />
+            <ContactButton
+              icon={<RiWhatsappFill />}
+              title="WhatsApp Us"
+              href="https://api.whatsapp.com/send?phone=971506045355"
+              text="+971 50 604 5355"
+            />
+            <ContactButton
+              icon={<MdEmail />}
+              title="Email Us"
+              href="mailto:info@citytours.ae"
+              text="info@citytours.ae"
+            />
           </div>
-          <div className="col-12 col-lg-6"></div>
         </div>
       </Container>
     </PrimarySection>
   );
 }
 
-const ContactButton = ({ icon, title, href, children }) => {
+const ContactButton = ({ icon, title, href, text }) => {
   return (
-    <div className={styles.button}>
+    <a className={styles.button} href={href}>
       <div className={styles.iconDiv}>{icon}</div>
       <div className={styles.textDiv}>
         <p className={styles.title}>{title}</p>
-        <p>{children}</p>
+        <p>{text}</p>
       </div>
-    </div>
+    </a>
+  );
+};
+
+const ContactForm = () => {
+  return (
+    <form className={styles.form}>
+      <SectionTitle fontSize="large" mb="30px">
+        <span className="semi-bold">Contact Us</span>
+      </SectionTitle>
+      <div className="row px-0">
+        <div className="col-12 col-lg-6">
+          <InputGroup label="Name" />
+        </div>
+        <div className="col-12 col-lg-6">
+          <InputGroup label="Email" />
+        </div>
+      </div>
+    </form>
   );
 };

@@ -29,7 +29,7 @@ export function PrimarySection({
     backgroundColor: backgroundColor || "transparent",
   };
   return (
-    <section className={`${styles.primarySection} ${className}`} style={style}>
+    <section className={className} style={style}>
       {children}
     </section>
   );

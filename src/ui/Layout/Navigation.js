@@ -1,5 +1,6 @@
 import styles from "./Navigation.module.css";
 import Container from "../../_components/Container/Container";
+import SecondaryButton from "../../_components/Buttons/SecondaryButton";
 
 export default function Navigation() {
   return (
@@ -19,22 +20,26 @@ const Logo = () => {
 const NavLinks = () => {
   return (
     <ul className={styles.navLinks}>
-      {links.map((item) => (
-        <li className={styles.link}>
-          <a href={item.href}>{item.name}</a>
-        </li>
-      ))}
+      {links.map((item) =>
+        item.cta === true ? (
+          <SecondaryButton>{item.name}</SecondaryButton>
+        ) : (
+          <li className={styles.link}>
+            <a href={item.href}>{item.name}</a>
+          </li>
+        )
+      )}
     </ul>
   );
 };
 
 const links = [
   {
-    name: "Services",
-    href: "/doctors",
+    name: "Tummy Tuck",
+    href: "/tummy-tuck",
   },
   {
-    name: "Package",
+    name: "Packages",
     href: "/packages",
   },
   {
@@ -44,5 +49,10 @@ const links = [
   {
     name: "Contact",
     href: "/contact",
+  },
+  {
+    name: "Free Consultation",
+    href: "/consultation",
+    cta: true,
   },
 ];

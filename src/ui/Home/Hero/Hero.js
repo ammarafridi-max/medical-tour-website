@@ -15,7 +15,7 @@ export default function Hero() {
         showModal={showModal}
         setShowModal={setShowModal}
       />
-      <PrimarySection>
+      <PrimarySection className={styles.section}>
         <Container className={styles.container}>
           <div className={styles.text}>
             <h1 className={styles.title}>Transform Your Look Today</h1>
@@ -33,7 +33,7 @@ export default function Hero() {
               Book Consultation
             </SecondaryButton>
           </div>
-          <div className={styles.img}>SOme Image here</div>
+          <div className={styles.img}></div>
         </Container>
       </PrimarySection>
     </>

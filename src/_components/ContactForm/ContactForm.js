@@ -5,10 +5,10 @@ import styles from "./ContactForm.module.css";
 
 export default function ContactForm() {
   return (
-    <form className={`${styles.container} col-12 col-lg-4`}>
-      <h3>Have Any Other Questions?</h3>
+    <form className={`${styles.container}`}>
+      <h3>Got More Questions?</h3>
       <p className={styles.instruction}>
-        Fill and submit the form below and we'll try to get back to you ASAP!
+        Fill and submit the form below and we'll try to answer it ASAP!
       </p>
       <Label type="secondary">Name</Label>
       <InputSecondary />

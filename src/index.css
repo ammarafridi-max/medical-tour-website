@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --primary-color: #00796b;
-  --primary-color-light: #cce5e1;
+  /* --primary-color: #00796b; */
+  /* --primary-color-light: #cce5e1; */
+  --primary-color: #01579b;
+  --primary-color-medium: #0178d5;
+  --primary-color-light: #d7edff;
   --secondary-color: #ffb300;
   --secondary-color-dark: #cc8f00;
 }
@@ -16,7 +15,8 @@
 }
 
 body {
-  background-color: rgba(0, 121, 107, 0.05);
+  /* background-color: rgba(0, 121, 107, 0.05); */
+  background-color: rgb(245, 245, 245);
 }
 
 p,

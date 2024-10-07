@@ -1,12 +1,14 @@
 .Btn {
   background-color: var(--secondary-color);
+  /* color: black; */
   font-size: 14px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: none;
   color: white;
   border-radius: 3px;
   transition-duration: 0.3s;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .Btn:hover {

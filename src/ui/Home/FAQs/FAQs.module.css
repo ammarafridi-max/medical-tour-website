@@ -1,4 +1,15 @@
 .row {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  flex-wrap: nowrap; /* Ensures elements stay on one line */
+}
+
+.row > :first-child {
+  flex-basis: 66%; /* First element takes 66% of the row */
+  flex-grow: 1; /* Allows it to grow or shrink as needed */
+}
+
+.row > :nth-child(2) {
+  flex-basis: 34%; /* Second element takes the remaining 34% */
+  flex-grow: 1; /* Allows it to grow or shrink as needed */
 }

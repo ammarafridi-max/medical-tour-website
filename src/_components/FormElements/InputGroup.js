@@ -23,7 +23,7 @@ export default function InputGroup(props) {
           </div>
         </div>
       ) : (
-        <div className="col-lg-4 mb-3 mx-0">
+        <div>
           <Label htmlFor={props.name}>{props.label}</Label>
           <Input
             type={props.type}

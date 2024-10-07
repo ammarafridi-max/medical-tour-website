@@ -10,7 +10,7 @@ export default function Services() {
     <PrimarySection>
       <Container>
         <SectionTitle textAlign="center" fontSize="large" pt="75px" pb="50px">
-          <span className="bolder">Cosmetic Surgeries</span> We Provide
+          <span className="bolder primary">Cosmetic Surgeries</span> We Provide
         </SectionTitle>
         <div>
           <ServiceCard />

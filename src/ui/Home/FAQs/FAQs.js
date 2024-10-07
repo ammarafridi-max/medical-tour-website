@@ -13,47 +13,75 @@ export default function FAQs() {
           <span className="bolder">Frequently Asked Questions</span>
         </SectionTitle>
         <div className={styles.row}>
-          <div className="col-12 col-lg-8 px-0">
-            {faqs.map((faq) => (
-              <FAQAccordion question={faq.question}>{faq.answer}</FAQAccordion>
-            ))}
+          <div>
+            {faqs.map((faq, i) => {
+              while (i < 6) {
+                return (
+                  <FAQAccordion question={faq.question}>
+                    {faq.answer}
+                  </FAQAccordion>
+                );
+              }
+            })}
           </div>
-          <ContactForm />
+          <div>
+            <ContactForm />
+          </div>
         </div>
       </Container>
     </PrimarySection>
   );
 }
 
-const faqs = [
+export const faqs = [
   {
-    question: "Is Pakistan a safe country?",
+    question: "What is included in the abdominoplasty package?",
     answer:
-      "Pakistan, in general, is a safe country, especially its capital city, Islamabad, where world-class facilities and hospitals are available. All of our surgeries will be performed in Islamabad.",
+      "Our abdominoplasty package includes the surgery itself, hospital stay, pre-operative consultations, post-operative care, accommodation, local transportation, and a dedicated patient coordinator to assist with travel arrangements.",
   },
   {
-    question: "Is Pakistan a safe country?",
+    question: "How long will I need to stay in Pakistan after the surgery?",
     answer:
-      "Pakistan, in general, is a safe country, especially its capital city, Islamabad, where world-class facilities and hospitals are available. All of our surgeries will be performed in Islamabad.",
+      "For an abdominoplasty, patients typically need to stay in Pakistan for 10-14 days. This allows time for pre-surgery consultations, the procedure, and post-operative care, including follow-up consultations and healing.",
   },
   {
-    question: "Is Pakistan a safe country?",
+    question: "Are the surgeons qualified and experienced?",
     answer:
-      "Pakistan, in general, is a safe country, especially its capital city, Islamabad, where world-class facilities and hospitals are available. All of our surgeries will be performed in Islamabad.",
+      "Yes, we work only with highly qualified and experienced surgeons who are board-certified and have extensive experience in performing abdominoplasty and other cosmetic surgeries.",
   },
   {
-    question: "Is Pakistan a safe country?",
+    question: "What is the recovery time for abdominoplasty?",
     answer:
-      "Pakistan, in general, is a safe country, especially its capital city, Islamabad, where world-class facilities and hospitals are available. All of our surgeries will be performed in Islamabad.",
+      "Initial recovery from abdominoplasty takes around 2-3 weeks. However, full recovery may take a few months. During the first few weeks, you’ll need to avoid strenuous activities and follow the post-operative care instructions provided by your surgeon.",
   },
   {
-    question: "Is Pakistan a safe country?",
+    question: "Is the surgery safe?",
     answer:
-      "Pakistan, in general, is a safe country, especially its capital city, Islamabad, where world-class facilities and hospitals are available. All of our surgeries will be performed in Islamabad.",
+      "Abdominoplasty is a common and safe procedure when performed by experienced surgeons in accredited facilities. Our partner hospitals follow strict international safety standards, and our medical team will monitor your progress before, during, and after the surgery to ensure your safety and well-being.",
   },
   {
-    question: "Is Pakistan a safe country?",
+    question: "Is it safe to travel to Pakistan for surgery?",
     answer:
-      "Pakistan, in general, is a safe country, especially its capital city, Islamabad, where world-class facilities and hospitals are available. All of our surgeries will be performed in Islamabad.",
+      "Yes, it is safe to travel to Pakistan for surgery. Our partner hospital is located in Murree, a serene and secure area in Islamabad, known for its peaceful environment. The location offers a calm atmosphere for recovery, and the city itself has strict security measures in place, ensuring the safety and comfort of our international patients.",
+  },
+  {
+    question: "Will I have support after returning home?",
+    answer:
+      "Yes, our team provides continuous post-operative support even after you return home. We offer virtual follow-up consultations to ensure your recovery is on track and to address any concerns or questions that may arise.",
+  },
+  {
+    question: "Do I need a visa to travel to Pakistan for surgery?",
+    answer:
+      "Yes, you will need a visa to travel to Pakistan for medical purposes. However, our team provides full assistance with obtaining a Pakistan e-Visa, making the process smooth and hassle-free.",
+  },
+  {
+    question: "Can I bring a companion with me?",
+    answer:
+      "Yes, you are welcome to bring a companion to accompany you during your stay. Our packages can also include accommodation and local transportation for your companion to ensure both of you are comfortable throughout your medical journey.",
+  },
+  {
+    question: "How do I prepare for the surgery?",
+    answer:
+      "Our medical team will provide you with detailed pre-surgery instructions. This may include specific dietary guidelines, adjusting medications, and preparing your body for surgery. We recommend following these instructions closely for optimal results and a smooth recovery.",
   },
 ];

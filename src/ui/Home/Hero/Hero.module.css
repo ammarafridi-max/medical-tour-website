@@ -1,8 +1,12 @@
+.section{
+  /* background-color: var(--primary-color); */
+  background-image: linear-gradient(var(--primary-color), var(--primary-color-medium));
+  width: 100%;
+}
+
 .container {
-  background-color: var(--primary-color);
   height: 450px;
   border-radius: 10px;
-  padding: 0 50px;
   color: white;
   display: flex;
   align-items: center;
